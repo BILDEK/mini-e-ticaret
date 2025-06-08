@@ -12,8 +12,7 @@ interface ProductCardProps {
 export default function ProductCard({ product }: ProductCardProps) {
   return (
     <Link href={`/products/${product.id}`} legacyBehavior>
-      <a className="block bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300 group">
-        <div className="relative w-full h-60"> {/* Parent'a boyut verdik */}
+       <div className="relative w-full h-60"> {/* Parent'a boyut verdik */}
           <Image
             src={product.imageUrl}
             alt={product.name}
@@ -43,7 +42,7 @@ export default function ProductCard({ product }: ProductCardProps) {
             Sepete Ekle
           </button>
         </div>
-      </a>
+    
     </Link>
   );
 }
